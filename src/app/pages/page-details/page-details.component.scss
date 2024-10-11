@@ -18,10 +18,26 @@ h1 {
   display: flex;
   gap: 1rem;
   justify-content: space-around;
+  margin-bottom: 3rem;
 }
 
 app-box-information {
   width: 15%;
+  @media screen and (max-width: 768px) {
+    width: 40%;
+  }
+}
+
+button {
+  background-color: #04838f;
+  color: white;
+  width: 10%;
+  padding: 0.25rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  margin: auto;
+  display: block;
+  border: none;
   @media screen and (max-width: 768px) {
     width: 40%;
   }

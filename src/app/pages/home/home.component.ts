@@ -12,7 +12,22 @@ export class HomeComponent implements OnInit {
 
   constructor(private olympicService: OlympicService) {}
 
+  boxList = [
+    {
+      title: 'Number of JOs',
+      number: 0,
+    },
+    {
+      title: 'Number of countries',
+      number: 0,
+    },
+  ];
+
   ngOnInit(): void {
     this.olympics$ = this.olympicService.getOlympics();
+    console.log(this.olympicService.getOlympics());
+    this.olympics$.subscribe((olympics) => {
+      this.boxList[1].number = olympics.length;
+    });
   }
 }
