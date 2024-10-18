@@ -1,5 +1,5 @@
 <main>
-  <h1>Name of country</h1>
+  <h1>{{ olympicService.selectedOlympic.getValue()?.country }}</h1>
 
   <div class="informations">
     <app-box-information
@@ -7,6 +7,23 @@
       [title]="item.title"
       [nbr]="item.number"
     ></app-box-information>
+  </div>
+  <div
+    class="chart-container"
+    *ngIf="this.olympicService.selectedOlympic.getValue()?.participations"
+  >
+    <ngx-charts-line-chart
+      [animations]="false"
+      [legend]="false"
+      [showXAxisLabel]="true"
+      [showYAxisLabel]="true"
+      [xAxis]="true"
+      [yAxis]="true"
+      xAxisLabel="Dates"
+      [timeline]="true"
+      [results]="data"
+    >
+    </ngx-charts-line-chart>
   </div>
 
   <button [routerLink]="['/']">Retour</button>

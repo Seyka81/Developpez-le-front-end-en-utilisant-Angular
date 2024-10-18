@@ -7,7 +7,7 @@
   padding: 1rem;
   font-size: 1.5rem;
   text-align: center;
-  height: auto;
+
   > p {
     margin: 0;
     color: gray;
@@ -15,5 +15,8 @@
   > span {
     font-weight: bolder;
     margin-top: 0.5rem;
+  }
+  @media screen and (max-width: 768px) {
+    height: 150px;
   }
 }

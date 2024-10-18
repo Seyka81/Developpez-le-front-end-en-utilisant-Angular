@@ -7,7 +7,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { BoxInformationComponent } from './components/box-information/box-information.component';
 import { PageDetailsComponent } from './pages/page-details/page-details.component';
-
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,8 @@ import { PageDetailsComponent } from './pages/page-details/page-details.componen
     AppRoutingModule,
     HttpClientModule,
     BoxInformationComponent,
+    NgxChartsModule,
+    NoopAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

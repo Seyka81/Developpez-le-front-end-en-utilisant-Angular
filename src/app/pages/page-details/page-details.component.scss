@@ -42,3 +42,8 @@ button {
     width: 40%;
   }
 }
+
+::ng-deep .chart-container {
+  display: block;
+  height: 500px;
+}
