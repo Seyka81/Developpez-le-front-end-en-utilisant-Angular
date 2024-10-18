@@ -56,7 +56,7 @@ export class PageDetailsComponent {
         }, 0) ?? 0;
     this.data = [
       {
-        name: this.olympicService.selectedOlympic.getValue()?.country ?? '',
+        name: 'Medals',
         series:
           this.olympicService.selectedOlympic
             .getValue()

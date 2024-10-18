@@ -45,3 +45,11 @@ app-box-information {
     font-size: 1rem !important;
   }
 }
+
+::ng-deep ngx-tooltip-content {
+  background-color: #04838f !important;
+}
+
+::ng-deep .tooltip-caret {
+  border-top: 7px solid #04838f !important;
+}
