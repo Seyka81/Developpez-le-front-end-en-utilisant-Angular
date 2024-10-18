@@ -27,10 +27,16 @@ app-box-information {
   }
 }
 
-::ng-deep ngx-charts-pie-chart {
+.chart-container {
   display: flex;
   justify-content: center;
-  height: 100px;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  @media (max-width: 768px) {
+    height: 300px;
+    width: 100%;
+  }
 }
 ::ng-deep .pie-label {
   font-size: 1.5rem !important;

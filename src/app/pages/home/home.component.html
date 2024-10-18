@@ -8,10 +8,12 @@
       [nbr]="item.number"
     ></app-box-information>
   </div>
-  <ngx-charts-pie-chart
-    [results]="dataPie"
-    [labels]="true"
-    (select)="onSelect($event)"
-  >
-  </ngx-charts-pie-chart>
+  <div class="chart-container">
+    <ngx-charts-pie-chart
+      [results]="dataPie"
+      [labels]="true"
+      (select)="onSelect($event)"
+    >
+    </ngx-charts-pie-chart>
+  </div>
 </main>
