@@ -63,6 +63,7 @@ export class PageDetailsComponent {
             ?.participations?.map((participation: Participation) => ({
               name: participation.year.toString(),
               value: participation.medalsCount,
+              city: participation.city,
             })) ?? [],
       },
     ];

@@ -23,6 +23,10 @@
       [timeline]="true"
       [results]="data"
     >
+      <ng-template #tooltipTemplate let-model="model">
+        {{ model.city }} <br />
+        {{ model.name }} - {{ model.value }} medals
+      </ng-template>
     </ngx-charts-line-chart>
   </div>
 
